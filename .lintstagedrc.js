@@ -5,5 +5,5 @@ const buildEslintCommand = (filenames) =>
 
 module.exports = {
   "src/**/*.css": "stylelint --fix",
-  "src/**/*.{js,jsx,ts,tsx}": [buildEslintCommand],
+  "src/**/*.{js,jsx,ts,tsx}": ["prettier -w", buildEslintCommand],
 };
