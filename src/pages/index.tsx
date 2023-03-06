@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import { Monthly } from "@/components/Monthly";
+import { monthlyData } from "@/data/monthly";
 
 export default function Home() {
   return (
@@ -9,9 +11,11 @@ export default function Home() {
         <title>Home | Bow Wow</title>
         <meta name="description" content="Bow wow home page" />
       </Head>
-      <main>
+      <main className="min-h-screen">
         <Container>
-          <Box>Home page</Box>
+          <Box pt={2}>
+            <Monthly data={monthlyData} />
+          </Box>
         </Container>
       </main>
     </>
