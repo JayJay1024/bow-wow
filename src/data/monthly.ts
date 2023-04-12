@@ -7,10 +7,10 @@ export const monthlyData: MonthlyData[] = [
   },
   {
     day: 12,
-    projects: ["JB8888", "WSD8888", "HB8888"],
+    projects: ["JB8888", "WSD8888"],
   },
   {
     day: 20,
-    projects: ["SDD8888"],
+    projects: ["SDD8888", "HB8888"],
   },
 ];
